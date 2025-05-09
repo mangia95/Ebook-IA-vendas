@@ -1,0 +1,253 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#hero {
+    background: #77aaff;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#hero .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero .hero-text {
+    flex-basis: 50%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+#hero .hero-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+#hero .hero-text strong {
+    color: #f0c14b; /* Amarelo Amazon */
+}
+
+#hero .hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#hero .price-section {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#hero .original-price {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+#hero .promo-price {
+    font-weight: bold;
+    color: #f0c14b;
+    font-size: 1.2em;
+}
+
+#hero .limited-offer {
+    font-style: italic;
+    color: #ffdddd;
+    margin-bottom: 20px;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    background: #f0c14b;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .cta-button:hover {
+    background: #e0b13b;
+}
+
+#hero .guarantee {
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: #eee;
+}
+
+#hero .hero-image {
+    flex-basis: 40%;
+}
+
+#hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#benefits, #target-audience, #cta-final, #author {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#benefits h2, #target-audience h2, #cta-final h2, #author h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.benefit-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.benefit-item h3 {
+    color: #77aaff;
+    margin-bottom: 10px;
+}
+
+#target-audience ul {
+    list-style: disc;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+#target-audience li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#cta-final .price-section {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#cta-final .original-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+#cta-final .promo-price {
+    font-weight: bold;
+    color: #28a745; /* Verde sucesso */
+    font-size: 1.2em;
+}
+
+#cta-final .cta-button {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#cta-final .cta-button:hover {
+    background: #218838;
+}
+
+#cta-final .limited-offer {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+#author p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    #hero .hero-content {
+        flex-direction: column;
+    }
+    #hero .hero-text,
+    #hero .hero-image {
+        flex-basis: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    #hero .hero-image img {
+        margin-top: 20px;
+    }
+    .container {
+        width: 95%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    #hero .hero-text h2 {
+        font-size: 1.8em;
+    }
+}
+
